@@ -10,9 +10,10 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Helmgood Holding LLC | Long-Term Ownership">
   <meta property="og:description" content="A disciplined holding structure for future business interests and operating ventures.">
-  <meta property="og:image" content="hero-architecture.jpg">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preload" as="image" href="hero-architecture.jpg">
+  <meta property="og:image" content="helmgood-hero.png">
+  <link rel="icon" href="helmgood-mark.png" type="image/png">
+  <link rel="preload" as="image" href="helmgood-hero.png">
+  <link rel="preload" as="image" href="helmgood-mark.png">
   <style>
     :root {
       --navy: #0C2340;
@@ -93,8 +94,9 @@
     .brand-mark {
       width: 62px;
       height: 62px;
+      object-fit: contain;
       flex: 0 0 auto;
-      filter: drop-shadow(0 16px 26px rgba(12, 35, 64, 0.52));
+      filter: drop-shadow(0 14px 24px rgba(12, 35, 64, 0.52));
     }
 
     .brand-name {
@@ -201,8 +203,7 @@
 
     .hero-frame img {
       width: 100%;
-      height: min(50vh, 620px);
-      min-height: 340px;
+      aspect-ratio: 3 / 2;
       object-fit: cover;
       object-position: center;
     }
@@ -211,8 +212,8 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(90deg, rgba(12, 35, 64, 0.88), transparent 56%),
-        linear-gradient(180deg, rgba(12, 35, 64, 0.05), rgba(12, 35, 64, 0.44));
+        linear-gradient(90deg, rgba(12, 35, 64, 0.18), transparent 38%, rgba(12, 35, 64, 0.12)),
+        linear-gradient(180deg, rgba(12, 35, 64, 0.03), rgba(12, 35, 64, 0.28));
       content: "";
     }
 
@@ -353,7 +354,7 @@
       border: 1px solid var(--edge);
       background:
         linear-gradient(135deg, rgba(12, 35, 64, 0.46), rgba(12, 35, 64, 0.95)),
-        url("hero-architecture.jpg") center / cover;
+        url("helmgood-hero.png") center / cover;
       box-shadow: var(--shadow);
     }
 
@@ -376,6 +377,8 @@
       left: 36px;
       width: 108px;
       height: 108px;
+      object-fit: contain;
+      filter: drop-shadow(0 16px 28px rgba(12, 35, 64, 0.54));
     }
 
     .mini-plate p {
@@ -613,16 +616,10 @@
         padding-inline: 20px;
       }
 
-      .hero-frame img {
-        height: min(49vh, 470px);
-        min-height: 300px;
-        object-position: 64% center;
-      }
-
       .hero-frame::after {
         background:
-          linear-gradient(180deg, rgba(12, 35, 64, 0.22), rgba(12, 35, 64, 0.66)),
-          linear-gradient(90deg, rgba(12, 35, 64, 0.46), transparent 72%);
+          linear-gradient(180deg, rgba(12, 35, 64, 0.06), rgba(12, 35, 64, 0.34)),
+          linear-gradient(90deg, rgba(12, 35, 64, 0.1), transparent 72%);
       }
 
       section {
@@ -669,22 +666,9 @@
   </style>
 </head>
 <body>
-  <svg class="sr-only" aria-hidden="true" focusable="false">
-    <defs>
-      <linearGradient id="helm-silver" x1="0" y1="0" x2="1" y2="1">
-        <stop stop-color="#FFFFFF"></stop>
-        <stop offset="1" stop-color="#C4CED4"></stop>
-      </linearGradient>
-    </defs>
-  </svg>
-
   <header class="site-nav">
     <a class="brand" href="#" aria-label="Helmgood Holding LLC home">
-      <svg class="brand-mark" viewBox="0 0 100 100" role="img" aria-label="Helmgood H mark">
-        <path d="M14 11h18v30h36V11h18v78H68V58H32v31H14z" fill="url(#helm-silver)"></path>
-        <path d="M50 24l6.2 19.8L76 50l-19.8 6.2L50 76l-6.2-19.8L24 50l19.8-6.2z" fill="#005C5C" stroke="#FFFFFF" stroke-width="1.5"></path>
-        <circle cx="50" cy="50" r="3.2" fill="#FFFFFF"></circle>
-      </svg>
+      <img class="brand-mark" src="helmgood-mark.png" alt="Helmgood compass H mark">
       <span class="brand-name"><strong>Helmgood</strong><span>Holding LLC</span></span>
     </a>
     <nav class="nav-links" aria-label="Primary navigation">
@@ -699,7 +683,7 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-media">
         <figure class="hero-frame frame-corner">
-          <img src="hero-architecture.jpg" alt="Abstract navy, teal, and silver architectural planes lit from within">
+          <img src="helmgood-hero.png" alt="Helmgood Holding LLC H compass logo lockup">
         </figure>
       </div>
       <div class="hero-content">
@@ -716,11 +700,7 @@
     <section class="about" id="about">
       <div class="section-inner about-grid">
         <aside class="mini-plate frame-corner" aria-label="Helmgood identity plate">
-          <svg class="mark-large" viewBox="0 0 100 100" aria-hidden="true">
-            <path d="M14 11h18v30h36V11h18v78H68V58H32v31H14z" fill="url(#helm-silver)"></path>
-            <path d="M50 24l6.2 19.8L76 50l-19.8 6.2L50 76l-6.2-19.8L24 50l19.8-6.2z" fill="#005C5C" stroke="#FFFFFF" stroke-width="1.5"></path>
-            <circle cx="50" cy="50" r="3.2" fill="#FFFFFF"></circle>
-          </svg>
+          <img class="mark-large" src="helmgood-mark.png" alt="">
           <p class="eyebrow">Long-Term Ownership</p>
           <h3>Structure before expansion.</h3>
           <p>Clear ownership, sound records, and patient standards before future ventures take shape.</p>
@@ -812,11 +792,7 @@
 
   <footer>
     <a class="brand" href="#" aria-label="Helmgood Holding LLC home">
-      <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
-        <path d="M14 11h18v30h36V11h18v78H68V58H32v31H14z" fill="url(#helm-silver)"></path>
-        <path d="M50 24l6.2 19.8L76 50l-19.8 6.2L50 76l-6.2-19.8L24 50l19.8-6.2z" fill="#005C5C" stroke="#FFFFFF" stroke-width="1.5"></path>
-        <circle cx="50" cy="50" r="3.2" fill="#FFFFFF"></circle>
-      </svg>
+      <img class="brand-mark" src="helmgood-mark.png" alt="">
       <span class="brand-name"><strong>Helmgood</strong><span>Holding LLC</span></span>
     </a>
     <span>Long-term ownership. Practical structure.</span>
