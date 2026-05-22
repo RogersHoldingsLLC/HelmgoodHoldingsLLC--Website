@@ -3,26 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Helmgood Holding LLC | Long-Term Ownership</title>
-  <meta name="description" content="Helmgood Holding LLC is a holding company built as a disciplined foundation for future business interests and operating ventures.">
+  <title>Helmgood Holding LLC | Private Holding Company</title>
+  <meta name="description" content="Helmgood Holding LLC is a Kentucky-based private holding company established for disciplined ownership, operating interests, and enduring business value.">
   <meta name="robots" content="index, follow">
+  <meta name="author" content="Helmgood Holding LLC">
   <meta name="theme-color" content="#0C2340">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Helmgood Holding LLC | Long-Term Ownership">
-  <meta property="og:description" content="A disciplined holding structure for future business interests and operating ventures.">
+  <meta property="og:site_name" content="Helmgood Holding LLC">
+  <meta property="og:url" content="https://rogersholdingsllc.github.io/HelmgoodHoldingsLLC--Website/">
+  <meta property="og:title" content="Helmgood Holding LLC | Private Holding Company">
+  <meta property="og:description" content="A Kentucky-based holding company built for disciplined ownership and long-term business interests.">
   <meta property="og:image" content="helmgood-hero.png">
+  <meta property="og:image:alt" content="Helmgood Holding LLC logo in navy, silver, and teal.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Helmgood Holding LLC | Private Holding Company">
+  <meta name="twitter:description" content="Disciplined ownership and enduring business infrastructure for future operating interests.">
+  <meta name="twitter:image" content="helmgood-hero.png">
   <link rel="icon" href="helmgood-mark.png" type="image/png">
+  <link rel="canonical" href="https://rogersholdingsllc.github.io/HelmgoodHoldingsLLC--Website/">
   <link rel="preload" as="image" href="helmgood-hero.png">
   <link rel="preload" as="image" href="helmgood-mark.png">
+  <script>document.documentElement.classList.add("js");</script>
   <style>
     :root {
       --navy: #0C2340;
       --teal: #005C5C;
       --silver: #C4CED4;
       --white: #FFFFFF;
-      --edge: rgba(196, 206, 212, 0.24);
-      --edge-strong: rgba(0, 92, 92, 0.54);
-      --shadow: 0 28px 80px rgba(12, 35, 64, 0.58);
+      --navy-deep: rgba(6, 18, 35, 0.92);
+      --edge: rgba(196, 206, 212, 0.18);
+      --edge-strong: rgba(0, 92, 92, 0.64);
+      --shadow: 0 30px 72px rgba(5, 16, 31, 0.34);
       --ease: cubic-bezier(0.22, 1, 0.36, 1);
     }
 
@@ -36,14 +47,30 @@
     }
 
     body {
+      position: relative;
       margin: 0;
       overflow-x: hidden;
       color: var(--white);
       background:
-        radial-gradient(circle at 8% 14%, rgba(196, 206, 212, 0.14), transparent 29rem),
-        radial-gradient(circle at 88% 8%, rgba(0, 92, 92, 0.32), transparent 32rem),
+        radial-gradient(circle at 8% 7%, rgba(196, 206, 212, 0.08), transparent 31rem),
+        radial-gradient(circle at 87% 4%, rgba(0, 92, 92, 0.18), transparent 32rem),
         var(--navy);
       font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body::before {
+      position: fixed;
+      z-index: 5;
+      inset: 0;
+      opacity: 0.13;
+      background-image:
+        radial-gradient(rgba(255, 255, 255, 0.56) 0.55px, transparent 0.7px),
+        radial-gradient(rgba(0, 0, 0, 0.64) 0.55px, transparent 0.72px);
+      background-position: 0 0, 9px 13px;
+      background-size: 13px 13px, 17px 17px;
+      content: "";
+      pointer-events: none;
+      mix-blend-mode: soft-light;
     }
 
     img {
@@ -75,28 +102,34 @@
       align-items: center;
       justify-content: space-between;
       gap: 24px;
-      min-height: 88px;
-      padding: 14px 6vw;
+      min-height: 82px;
+      padding: 12px 6vw;
       border-bottom: 1px solid rgba(196, 206, 212, 0.16);
-      background: rgba(12, 35, 64, 0.9);
-      box-shadow: 0 18px 44px rgba(12, 35, 64, 0.28);
-      backdrop-filter: blur(14px);
+      background: rgba(12, 35, 64, 0.72);
+      backdrop-filter: blur(16px);
+      transition: min-height 260ms var(--ease), background 260ms var(--ease), box-shadow 260ms var(--ease);
+    }
+
+    .site-nav.is-scrolled {
+      min-height: 74px;
+      background: rgba(8, 24, 45, 0.92);
+      box-shadow: 0 16px 38px rgba(5, 16, 31, 0.24);
     }
 
     .brand {
       display: inline-flex;
       align-items: center;
-      min-width: 270px;
-      gap: 15px;
+      min-width: 252px;
+      gap: 14px;
       text-decoration: none;
     }
 
     .brand-mark {
-      width: 62px;
-      height: 62px;
+      width: 56px;
+      height: 56px;
       object-fit: contain;
       flex: 0 0 auto;
-      filter: drop-shadow(0 14px 24px rgba(12, 35, 64, 0.52));
+      filter: drop-shadow(0 12px 20px rgba(5, 16, 31, 0.42));
     }
 
     .brand-name {
@@ -108,16 +141,16 @@
 
     .brand-name strong {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 21px;
+      font-size: 20px;
       font-weight: 500;
-      letter-spacing: 4px;
+      letter-spacing: 3.6px;
     }
 
     .brand-name span {
       color: var(--silver);
-      font-size: 10px;
+      font-size: 9px;
       font-weight: 700;
-      letter-spacing: 4.2px;
+      letter-spacing: 4px;
     }
 
     .nav-links {
@@ -125,7 +158,7 @@
       align-items: center;
       justify-content: flex-end;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 8px;
     }
 
     .nav-links a,
@@ -134,32 +167,30 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 44px;
+      min-height: 42px;
       overflow: hidden;
       border: 1px solid var(--edge);
       text-decoration: none;
       text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 12px;
+      letter-spacing: 1.9px;
+      font-size: 11px;
       transition: transform 240ms var(--ease), border-color 240ms var(--ease), background 240ms var(--ease), box-shadow 240ms var(--ease), color 240ms var(--ease);
     }
 
     .nav-links a {
-      padding: 0 17px;
+      padding: 0 16px;
       color: rgba(196, 206, 212, 0.92);
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(196, 206, 212, 0.02));
+      background: rgba(255, 255, 255, 0.025);
     }
 
-    .nav-links a::before,
-    .frame-corner::before,
-    .panel::before {
+    .frame-corner::before {
       position: absolute;
       top: 0;
       right: 0;
-      width: 30px;
-      height: 30px;
-      border-top: 1px solid rgba(0, 92, 92, 0.8);
-      border-right: 1px solid rgba(0, 92, 92, 0.8);
+      width: 42px;
+      height: 42px;
+      border-top: 1px solid rgba(0, 92, 92, 0.72);
+      border-right: 1px solid rgba(0, 92, 92, 0.72);
       content: "";
       pointer-events: none;
     }
@@ -167,8 +198,8 @@
     .nav-links a:hover,
     .button:hover {
       border-color: var(--edge-strong);
-      transform: translateY(-3px);
-      box-shadow: 0 18px 38px rgba(0, 92, 92, 0.16);
+      transform: translateY(-2px);
+      box-shadow: 0 15px 32px rgba(0, 92, 92, 0.12);
     }
 
     .nav-links .contact-link,
@@ -176,29 +207,32 @@
       color: var(--navy);
       border-color: rgba(196, 206, 212, 0.68);
       background: linear-gradient(135deg, var(--white), var(--silver));
-      box-shadow: 0 18px 42px rgba(12, 35, 64, 0.24);
+      box-shadow: 0 14px 32px rgba(5, 16, 31, 0.18);
     }
 
     .hero {
       display: grid;
       padding: 0;
       background:
-        linear-gradient(180deg, rgba(196, 206, 212, 0.045), transparent 34%),
+        linear-gradient(180deg, rgba(196, 206, 212, 0.035), transparent 30%),
+        linear-gradient(180deg, rgba(6, 18, 35, 0.2), transparent 55%),
         var(--navy);
     }
 
     .hero-media {
-      padding: clamp(28px, 3.4vw, 46px) 6vw 34px;
+      padding: clamp(30px, 4.2vw, 64px) 6vw clamp(22px, 2.4vw, 36px);
     }
 
     .hero-frame {
       position: relative;
-      width: min(1280px, 100%);
+      width: min(1180px, 100%);
       margin: 0 auto;
       overflow: hidden;
-      border: 1px solid rgba(196, 206, 212, 0.28);
-      background: rgba(12, 35, 64, 0.78);
+      border: 1px solid rgba(196, 206, 212, 0.2);
+      background: var(--navy-deep);
       box-shadow: var(--shadow);
+      transform: translate3d(0, var(--hero-shift, 0px), 0);
+      transition: transform 900ms var(--ease);
     }
 
     .hero-frame img {
@@ -212,8 +246,8 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(90deg, rgba(12, 35, 64, 0.18), transparent 38%, rgba(12, 35, 64, 0.12)),
-        linear-gradient(180deg, rgba(12, 35, 64, 0.03), rgba(12, 35, 64, 0.28));
+        linear-gradient(90deg, rgba(12, 35, 64, 0.15), transparent 40%, rgba(12, 35, 64, 0.1)),
+        linear-gradient(180deg, rgba(12, 35, 64, 0.02), rgba(12, 35, 64, 0.16));
       content: "";
     }
 
@@ -221,14 +255,12 @@
       position: relative;
       display: grid;
       justify-items: center;
-      padding: 42px 6vw 46px;
-      border-top: 1px solid rgba(0, 92, 92, 0.72);
+      padding: clamp(34px, 4.4vw, 62px) 6vw clamp(48px, 5.5vw, 76px);
+      border-top: 1px solid rgba(0, 92, 92, 0.48);
       border-bottom: 1px solid rgba(196, 206, 212, 0.2);
       background:
-        radial-gradient(circle at 50% 0%, rgba(0, 92, 92, 0.25), transparent 22rem),
-        linear-gradient(135deg, rgba(12, 35, 64, 0.98), rgba(12, 35, 64, 0.86));
+        linear-gradient(135deg, rgba(8, 24, 45, 0.92), rgba(12, 35, 64, 0.98));
       text-align: center;
-      box-shadow: 0 26px 60px rgba(12, 35, 64, 0.44);
     }
 
     .hero-content::after {
@@ -281,7 +313,7 @@
       color: rgba(196, 206, 212, 0.94);
     }
 
-    .hero-content p {
+    .hero-copy {
       max-width: 690px;
       margin: 18px auto 0;
       font-size: 17px;
@@ -299,30 +331,95 @@
     .button {
       min-width: 190px;
       padding: 0 24px;
-      background: rgba(255, 255, 255, 0.055);
+      background: rgba(255, 255, 255, 0.035);
     }
 
-    .button::after {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(110deg, transparent 0 36%, rgba(255, 255, 255, 0.24) 49%, transparent 62%);
-      content: "";
-      transform: translateX(-120%);
-      transition: transform 560ms var(--ease);
+    .button:focus-visible,
+    .nav-links a:focus-visible {
+      outline: 2px solid var(--silver);
+      outline-offset: 4px;
     }
 
-    .button:hover::after {
-      transform: translateX(120%);
+    .credentials {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      max-width: 920px;
+      margin: 34px auto 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .credentials li {
+      padding: 11px 14px;
+      border: 1px solid rgba(196, 206, 212, 0.14);
+      color: rgba(196, 206, 212, 0.92);
+      background: rgba(255, 255, 255, 0.025);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+    }
+
+    .institutional-line {
+      position: relative;
+      border-bottom: 1px solid rgba(196, 206, 212, 0.14);
+      background: rgba(6, 18, 35, 0.28);
+    }
+
+    .institutional-line ul {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      width: min(1160px, 88vw);
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+    }
+
+    .institutional-line li {
+      min-height: 96px;
+      display: grid;
+      align-content: center;
+      gap: 8px;
+      padding: 24px clamp(18px, 3vw, 40px);
+      border-left: 1px solid rgba(196, 206, 212, 0.14);
+    }
+
+    .institutional-line li:last-child {
+      border-right: 1px solid rgba(196, 206, 212, 0.14);
+    }
+
+    .institutional-line strong {
+      color: var(--white);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(20px, 2vw, 28px);
+      font-weight: 500;
+    }
+
+    .institutional-line span {
+      color: var(--silver);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2.6px;
+      text-transform: uppercase;
     }
 
     section {
       position: relative;
-      padding: 108px 6vw;
+      padding: clamp(82px, 9vw, 124px) 6vw;
       scroll-margin-top: 116px;
     }
 
-    section + section {
-      border-top: 1px solid rgba(196, 206, 212, 0.14);
+    main section:not(.hero)::before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: min(1160px, 88vw);
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(196, 206, 212, 0.28), rgba(0, 92, 92, 0.42), transparent);
+      content: "";
+      transform: translateX(-50%);
     }
 
     .section-inner {
@@ -332,8 +429,8 @@
 
     .about {
       background:
-        radial-gradient(circle at 5% 22%, rgba(196, 206, 212, 0.12), transparent 25rem),
-        linear-gradient(180deg, rgba(196, 206, 212, 0.045), transparent);
+        linear-gradient(135deg, rgba(196, 206, 212, 0.045), transparent 42%),
+        rgba(18, 48, 80, 0.22);
     }
 
     .about-grid,
@@ -351,9 +448,9 @@
       align-content: end;
       overflow: hidden;
       padding: 36px;
-      border: 1px solid var(--edge);
+      border: 1px solid rgba(196, 206, 212, 0.16);
       background:
-        linear-gradient(135deg, rgba(12, 35, 64, 0.46), rgba(12, 35, 64, 0.95)),
+        linear-gradient(135deg, rgba(12, 35, 64, 0.54), rgba(6, 18, 35, 0.92)),
         url("helmgood-hero.png") center / cover;
       box-shadow: var(--shadow);
     }
@@ -361,8 +458,8 @@
     .mini-plate::after {
       position: absolute;
       inset: auto 0 0;
-      height: 62%;
-      background: linear-gradient(180deg, transparent, rgba(12, 35, 64, 0.96));
+      height: 66%;
+      background: linear-gradient(180deg, transparent, rgba(6, 18, 35, 0.94));
       content: "";
     }
 
@@ -389,7 +486,7 @@
 
     .about-copy {
       padding-left: clamp(20px, 3vw, 34px);
-      border-left: 2px solid var(--teal);
+      border-left: 1px solid rgba(0, 92, 92, 0.8);
     }
 
     .section-heading {
@@ -421,7 +518,7 @@
 
     .principles {
       background:
-        radial-gradient(circle at 90% 10%, rgba(0, 92, 92, 0.32), transparent 30rem),
+        linear-gradient(180deg, rgba(6, 18, 35, 0.24), rgba(12, 35, 64, 0.96)),
         rgba(12, 35, 64, 0.98);
     }
 
@@ -433,21 +530,19 @@
 
     .panel {
       position: relative;
-      min-height: 274px;
+      min-height: 268px;
       overflow: hidden;
       padding: 34px;
       border: 1px solid var(--edge);
-      background:
-        linear-gradient(145deg, rgba(255, 255, 255, 0.09), rgba(196, 206, 212, 0.025)),
-        rgba(12, 35, 64, 0.72);
+      background: rgba(255, 255, 255, 0.035);
       box-shadow: var(--shadow);
       transition: transform 240ms var(--ease), border-color 240ms var(--ease), box-shadow 240ms var(--ease);
     }
 
     .panel:hover {
       border-color: var(--edge-strong);
-      transform: translateY(-5px);
-      box-shadow: 0 32px 88px rgba(0, 92, 92, 0.18);
+      transform: translateY(-4px);
+      box-shadow: 0 28px 62px rgba(5, 16, 31, 0.38);
     }
 
     .panel-number {
@@ -467,7 +562,7 @@
 
     .future {
       background:
-        linear-gradient(90deg, rgba(196, 206, 212, 0.07), transparent 26%),
+        linear-gradient(90deg, rgba(196, 206, 212, 0.045), transparent 30%),
         var(--navy);
     }
 
@@ -490,8 +585,15 @@
       align-items: start;
       padding: 25px;
       border: 1px solid var(--edge);
+      background: rgba(255, 255, 255, 0.028);
+      box-shadow: 0 18px 38px rgba(5, 16, 31, 0.18);
+      transition: border-color 240ms var(--ease), background 240ms var(--ease), transform 240ms var(--ease);
+    }
+
+    .future-item:hover {
+      border-color: var(--edge-strong);
       background: rgba(255, 255, 255, 0.045);
-      box-shadow: 0 18px 42px rgba(12, 35, 64, 0.28);
+      transform: translateY(-3px);
     }
 
     .future-item span {
@@ -517,8 +619,7 @@
 
     .contact {
       background:
-        radial-gradient(circle at 50% 0%, rgba(0, 92, 92, 0.28), transparent 28rem),
-        linear-gradient(180deg, rgba(12, 35, 64, 0.96), var(--navy));
+        linear-gradient(180deg, rgba(6, 18, 35, 0.36), rgba(12, 35, 64, 0.98));
     }
 
     .contact-card {
@@ -528,8 +629,8 @@
       padding: clamp(30px, 4vw, 48px);
       border: 1px solid var(--edge);
       background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(196, 206, 212, 0.02)),
-        rgba(12, 35, 64, 0.8);
+        linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(196, 206, 212, 0.015)),
+        rgba(12, 35, 64, 0.72);
       box-shadow: var(--shadow);
     }
 
@@ -568,6 +669,10 @@
       text-transform: uppercase;
     }
 
+    footer > span {
+      text-align: right;
+    }
+
     footer .brand {
       min-width: auto;
     }
@@ -581,39 +686,83 @@
       font-size: 16px;
     }
 
+    .reveal {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .js .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 760ms var(--ease), transform 760ms var(--ease);
+    }
+
+    .js .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .principle-grid .reveal:nth-child(2),
+    .future-list .reveal:nth-child(2) {
+      transition-delay: 80ms;
+    }
+
+    .principle-grid .reveal:nth-child(3),
+    .future-list .reveal:nth-child(3) {
+      transition-delay: 150ms;
+    }
+
     @media (max-width: 860px) {
       .site-nav {
-        align-items: flex-start;
-        flex-direction: column;
+        gap: 14px;
         min-height: 0;
         padding: 16px 20px;
       }
 
       .brand {
         min-width: 0;
+        gap: 11px;
       }
 
       .brand-mark {
-        width: 54px;
-        height: 54px;
+        width: 48px;
+        height: 48px;
       }
 
       .brand-name strong {
-        font-size: 18px;
+        font-size: 17px;
+        letter-spacing: 3px;
+      }
+
+      .brand-name span {
+        letter-spacing: 3.2px;
       }
 
       .nav-links {
-        width: 100%;
-        justify-content: flex-start;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        max-width: calc(100vw - 40px);
+        overflow-x: auto;
+        scrollbar-width: none;
+      }
+
+      .nav-links::-webkit-scrollbar {
+        display: none;
       }
 
       .nav-links a {
-        min-height: 40px;
-        padding: 0 14px;
+        min-height: 38px;
+        padding: 0 12px;
+        white-space: nowrap;
       }
 
       .hero-media {
+        padding-top: 24px;
         padding-inline: 20px;
+      }
+
+      .hero-frame img {
+        aspect-ratio: 1.16 / 1;
       }
 
       .hero-frame::after {
@@ -623,8 +772,55 @@
       }
 
       section {
-        padding: 84px 20px;
-        scroll-margin-top: 164px;
+        padding: 76px 20px;
+        scroll-margin-top: 110px;
+      }
+
+      h1 {
+        font-size: clamp(34px, 9.8vw, 56px);
+        line-height: 1.02;
+      }
+
+      h2 {
+        font-size: clamp(30px, 8vw, 46px);
+      }
+
+      .hero-content {
+        padding-inline: 20px;
+      }
+
+      .hero-copy,
+      .section-heading p,
+      .about-copy p,
+      .future-copy p {
+        font-size: 16px;
+        line-height: 1.72;
+      }
+
+      .credentials {
+        gap: 8px;
+      }
+
+      .credentials li {
+        flex: 1 1 calc(50% - 8px);
+        padding-inline: 10px;
+        text-align: center;
+      }
+
+      .institutional-line ul {
+        grid-template-columns: 1fr;
+        width: calc(100% - 40px);
+      }
+
+      .institutional-line li,
+      .institutional-line li:last-child {
+        min-height: 0;
+        border-right: 1px solid rgba(196, 206, 212, 0.14);
+        border-bottom: 1px solid rgba(196, 206, 212, 0.14);
+      }
+
+      .institutional-line li:last-child {
+        border-bottom: 0;
       }
 
       .about-grid,
@@ -634,7 +830,19 @@
       }
 
       .mini-plate {
-        min-height: 390px;
+        min-height: 360px;
+        padding: 28px;
+      }
+
+      .mini-plate .mark-large {
+        top: 28px;
+        left: 28px;
+        width: 88px;
+        height: 88px;
+      }
+
+      .about-copy {
+        padding-left: 18px;
       }
 
       .principle-grid {
@@ -662,6 +870,65 @@
         flex-direction: column;
         padding-inline: 20px;
       }
+
+      footer > span {
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .site-nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+        width: 100%;
+      }
+
+      .brand-name strong {
+        font-size: 16px;
+      }
+
+      .hero-frame img {
+        aspect-ratio: 1 / 1;
+        object-position: center;
+      }
+
+      .hero-actions,
+      .button {
+        width: 100%;
+      }
+
+      .credentials li {
+        flex-basis: 100%;
+      }
+
+      .panel,
+      .future-item,
+      .contact-card {
+        padding-inline: 24px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .js .reveal {
+        opacity: 1;
+        transform: none;
+      }
     }
   </style>
 </head>
@@ -686,34 +953,48 @@
           <img src="helmgood-hero.png" alt="Helmgood Holding LLC H compass logo lockup">
         </figure>
       </div>
-      <div class="hero-content">
+      <div class="hero-content reveal">
         <p class="eyebrow">Helmgood Holding LLC</p>
-        <h1 id="hero-title">A disciplined foundation for future business interests.</h1>
-        <p>Helmgood Holding LLC is being established to hold, manage, and grow future operating ventures with practical structure and a long-term view.</p>
+        <h1 id="hero-title">Holding structure for enduring business value.</h1>
+        <p class="hero-copy">Helmgood Holding LLC is a privately held company built to own, support, and grow future business interests with discipline, patience, and practical operating judgment.</p>
         <div class="hero-actions">
           <a class="button primary" href="#contact">Contact</a>
           <a class="button" href="#about">Company Overview</a>
         </div>
+        <ul class="credentials" aria-label="Company attributes">
+          <li>Privately Held</li>
+          <li>Long-Term Ownership</li>
+          <li>Kentucky-Based</li>
+          <li>Built for Enduring Value</li>
+        </ul>
       </div>
     </section>
 
+    <aside class="institutional-line" aria-label="Helmgood focus">
+      <ul>
+        <li><span>Ownership</span><strong>Long horizon</strong></li>
+        <li><span>Operations</span><strong>Disciplined oversight</strong></li>
+        <li><span>Capital</span><strong>Strategic allocation</strong></li>
+      </ul>
+    </aside>
+
     <section class="about" id="about">
       <div class="section-inner about-grid">
-        <aside class="mini-plate frame-corner" aria-label="Helmgood identity plate">
+        <aside class="mini-plate frame-corner reveal" aria-label="Helmgood identity plate">
           <img class="mark-large" src="helmgood-mark.png" alt="">
           <p class="eyebrow">Long-Term Ownership</p>
           <h3>Structure before expansion.</h3>
-          <p>Clear ownership, sound records, and patient standards before future ventures take shape.</p>
+          <p>Clear ownership, sound records, and patient standards before new interests take shape.</p>
         </aside>
-        <div class="about-copy">
+        <div class="about-copy reveal">
           <p class="eyebrow">About</p>
-          <h2>A holding company built to support what comes next.</h2>
-          <p>Helmgood Holding LLC is the parent-company foundation for future business interests. The focus is straightforward: organize ownership carefully, prepare durable business infrastructure, and evaluate growth with discipline.</p>
-          <p>The company is not positioned around hype or short-term noise. It is intended for responsible management, practical operating judgment, and ventures that can be understood over time.</p>
+          <h2>A private parent company built with a long view.</h2>
+          <p>Helmgood Holding LLC provides the ownership foundation for future operating interests. Its role is straightforward: maintain a clear structure, evaluate opportunities carefully, and support businesses with durable standards.</p>
+          <p>The company is grounded in disciplined operations and selective capital decisions. Expansion follows readiness, fit, and the ability to steward an interest responsibly over time.</p>
           <div class="signature-line">
             <span>Private Holding Company</span>
-            <span>Disciplined Ownership</span>
-            <span>Future Ventures</span>
+            <span>Disciplined Operations</span>
+            <span>Strategic Capital</span>
           </div>
         </div>
       </div>
@@ -721,26 +1002,26 @@
 
     <section class="principles" id="principles">
       <div class="section-inner">
-        <header class="section-heading">
+        <header class="section-heading reveal">
           <p class="eyebrow">Operating Principles</p>
-          <h2>Prestige comes from the work behind the structure.</h2>
-          <p>Helmgood is designed to give future interests a measured place to be held, managed, and improved.</p>
+          <h2>Ownership earns trust through standards.</h2>
+          <p>Helmgood is organized to hold future interests with attention to records, execution, and reputation.</p>
         </header>
         <div class="principle-grid">
-          <article class="panel">
+          <article class="panel reveal">
             <span class="panel-number">01</span>
-            <h3>Own deliberately.</h3>
-            <p>Future interests should fit a clear ownership thesis, understandable economics, and real operating responsibility.</p>
+            <h3>Selective ownership.</h3>
+            <p>Interests should be understandable, aligned with the holding structure, and worthy of sustained responsibility.</p>
           </article>
-          <article class="panel">
+          <article class="panel reveal">
             <span class="panel-number">02</span>
-            <h3>Build responsibly.</h3>
-            <p>Standards, records, relationships, and execution matter before scale becomes a conversation.</p>
+            <h3>Disciplined operations.</h3>
+            <p>Sound records, capable relationships, measured decisions, and execution matter before scale.</p>
           </article>
-          <article class="panel">
+          <article class="panel reveal">
             <span class="panel-number">03</span>
-            <h3>Grow patiently.</h3>
-            <p>The holding company is structured for durable decisions, selective opportunities, and long-term value.</p>
+            <h3>Enduring value.</h3>
+            <p>Capital and attention are directed toward durable outcomes, not short-term presentation.</p>
           </article>
         </div>
       </div>
@@ -748,23 +1029,23 @@
 
     <section class="future" id="future">
       <div class="section-inner future-layout">
-        <div class="future-copy">
+        <div class="future-copy reveal">
           <p class="eyebrow">Future Direction</p>
-          <h2>A trustworthy parent structure for future ventures.</h2>
-          <p>The public face is intentionally concise while the company is being established. As Helmgood adds business interests, each venture can be introduced with clarity instead of speculation.</p>
+          <h2>Prepared for operating interests that fit.</h2>
+          <p>Helmgood is intentionally concise at this stage. As business interests are added, they can be presented with the context, accountability, and clarity they deserve.</p>
         </div>
         <div class="future-list">
-          <article class="future-item">
+          <article class="future-item reveal">
             <span>Foundation</span>
-            <div><h3>Holding infrastructure</h3><p>Ownership, records, financial readiness, and practical governance.</p></div>
+            <div><h3>Holding infrastructure</h3><p>Ownership records, financial readiness, governance, and durable administration.</p></div>
           </article>
-          <article class="future-item">
+          <article class="future-item reveal">
             <span>Ventures</span>
-            <div><h3>Selective operating interests</h3><p>Future businesses and assets considered with operating discipline.</p></div>
+            <div><h3>Selective opportunities</h3><p>Future businesses and assets considered through operating fit and long-term responsibility.</p></div>
           </article>
-          <article class="future-item">
+          <article class="future-item reveal">
             <span>Stewardship</span>
-            <div><h3>Long-term management</h3><p>Patient oversight designed to protect reputation and enterprise value.</p></div>
+            <div><h3>Long-term management</h3><p>Patient oversight designed to protect reputation, continuity, and enterprise value.</p></div>
           </article>
         </div>
       </div>
@@ -772,17 +1053,17 @@
 
     <section class="contact" id="contact">
       <div class="section-inner contact-grid">
-        <header class="section-heading">
+        <header class="section-heading reveal">
           <p class="eyebrow">Contact</p>
           <h2>Direct inquiries.</h2>
-          <p>For ownership conversations, introductions, or future opportunities, contact Helmgood Holding LLC directly.</p>
+          <p>For introductions, ownership conversations, or aligned opportunities, contact Helmgood Holding LLC directly.</p>
         </header>
-        <aside class="contact-card frame-corner">
+        <aside class="contact-card frame-corner reveal">
           <h3>Helmgood Holding LLC</h3>
-          <p>A professional holding company foundation for future business interests.</p>
+          <p>Kentucky-based. Privately held. Built to support future business interests with disciplined oversight.</p>
           <div class="contact-meta">
             <a href="mailto:contact@helmgoodholdings.com">contact@helmgoodholdings.com</a>
-            <span>Long-term business ownership</span>
+            <span>Long-term ownership and strategic capital</span>
           </div>
           <a class="button primary" href="mailto:contact@helmgoodholdings.com">Send Inquiry</a>
         </aside>
@@ -795,7 +1076,36 @@
       <img class="brand-mark" src="helmgood-mark.png" alt="">
       <span class="brand-name"><strong>Helmgood</strong><span>Holding LLC</span></span>
     </a>
-    <span>Long-term ownership. Practical structure.</span>
+    <span>Kentucky-based private holding company. Built for enduring value.</span>
   </footer>
+  <script>
+    const header = document.querySelector(".site-nav");
+    const heroFrame = document.querySelector(".hero-frame");
+    const revealItems = document.querySelectorAll(".reveal");
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    const setHeaderState = () => header.classList.toggle("is-scrolled", window.scrollY > 18);
+
+    const setHeroDepth = () => {
+      if (reducedMotion.matches || !heroFrame) return;
+      heroFrame.style.setProperty("--hero-shift", `${Math.min(window.scrollY * 0.055, 24)}px`);
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    }, { rootMargin: "0px 0px -12%", threshold: 0.12 });
+
+    revealItems.forEach((item) => observer.observe(item));
+    setHeaderState();
+    setHeroDepth();
+    window.addEventListener("scroll", () => {
+      setHeaderState();
+      setHeroDepth();
+    }, { passive: true });
+  </script>
 </body>
 </html>
