@@ -33,7 +33,7 @@
       --navy-deep: rgba(6, 18, 35, 0.92);
       --edge: rgba(196, 206, 212, 0.18);
       --edge-strong: rgba(0, 92, 92, 0.64);
-      --shadow: 0 30px 72px rgba(5, 16, 31, 0.34);
+      --shadow: 0 26px 62px rgba(5, 16, 31, 0.3);
       --ease: cubic-bezier(0.22, 1, 0.36, 1);
     }
 
@@ -52,8 +52,8 @@
       overflow-x: hidden;
       color: var(--white);
       background:
-        radial-gradient(circle at 8% 7%, rgba(196, 206, 212, 0.08), transparent 31rem),
-        radial-gradient(circle at 87% 4%, rgba(0, 92, 92, 0.18), transparent 32rem),
+        radial-gradient(circle at 8% 7%, rgba(196, 206, 212, 0.06), transparent 31rem),
+        radial-gradient(circle at 87% 4%, rgba(0, 92, 92, 0.12), transparent 32rem),
         var(--navy);
       font-family: Arial, Helvetica, sans-serif;
     }
@@ -62,7 +62,7 @@
       position: fixed;
       z-index: 5;
       inset: 0;
-      opacity: 0.13;
+      opacity: 0.09;
       background-image:
         radial-gradient(rgba(255, 255, 255, 0.56) 0.55px, transparent 0.7px),
         radial-gradient(rgba(0, 0, 0, 0.64) 0.55px, transparent 0.72px);
@@ -198,8 +198,8 @@
     .nav-links a:hover,
     .button:hover {
       border-color: var(--edge-strong);
-      transform: translateY(-2px);
-      box-shadow: 0 15px 32px rgba(0, 92, 92, 0.12);
+      transform: translateY(-1px);
+      box-shadow: 0 12px 26px rgba(5, 16, 31, 0.22);
     }
 
     .nav-links .contact-link,
@@ -213,10 +213,7 @@
     .hero {
       display: grid;
       padding: 0;
-      background:
-        linear-gradient(180deg, rgba(196, 206, 212, 0.035), transparent 30%),
-        linear-gradient(180deg, rgba(6, 18, 35, 0.2), transparent 55%),
-        var(--navy);
+      background: linear-gradient(180deg, rgba(6, 18, 35, 0.14), transparent 55%), var(--navy);
     }
 
     .hero-media {
@@ -258,8 +255,7 @@
       padding: clamp(34px, 4.4vw, 62px) 6vw clamp(48px, 5.5vw, 76px);
       border-top: 1px solid rgba(0, 92, 92, 0.48);
       border-bottom: 1px solid rgba(196, 206, 212, 0.2);
-      background:
-        linear-gradient(135deg, rgba(8, 24, 45, 0.92), rgba(12, 35, 64, 0.98));
+      background: rgba(8, 24, 45, 0.78);
       text-align: center;
     }
 
@@ -417,7 +413,7 @@
       left: 50%;
       width: min(1160px, 88vw);
       height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(196, 206, 212, 0.28), rgba(0, 92, 92, 0.42), transparent);
+      background: linear-gradient(90deg, transparent, rgba(196, 206, 212, 0.25), rgba(0, 92, 92, 0.28), transparent);
       content: "";
       transform: translateX(-50%);
     }
@@ -428,9 +424,7 @@
     }
 
     .about {
-      background:
-        linear-gradient(135deg, rgba(196, 206, 212, 0.045), transparent 42%),
-        rgba(18, 48, 80, 0.22);
+      background: rgba(18, 48, 80, 0.16);
     }
 
     .about-grid,
@@ -441,47 +435,37 @@
       gap: clamp(40px, 7vw, 88px);
     }
 
-    .mini-plate {
+    .about-photo {
       position: relative;
-      min-height: 440px;
-      display: grid;
-      align-content: end;
+      margin: 0;
       overflow: hidden;
-      padding: 36px;
-      border: 1px solid rgba(196, 206, 212, 0.16);
-      background:
-        linear-gradient(135deg, rgba(12, 35, 64, 0.54), rgba(6, 18, 35, 0.92)),
-        url("helmgood-hero.png") center / cover;
-      box-shadow: var(--shadow);
+      border: 1px solid rgba(196, 206, 212, 0.2);
+      background: rgba(6, 18, 35, 0.28);
+      box-shadow: 0 22px 52px rgba(5, 16, 31, 0.24);
     }
 
-    .mini-plate::after {
-      position: absolute;
-      inset: auto 0 0;
-      height: 66%;
-      background: linear-gradient(180deg, transparent, rgba(6, 18, 35, 0.94));
-      content: "";
+    .about-photo img {
+      width: 100%;
+      aspect-ratio: 0.86;
+      object-fit: cover;
+      object-position: 61% 50%;
+      transform: scale(1.18);
+      transform-origin: 61% 52%;
     }
 
-    .mini-plate > * {
-      position: relative;
-      z-index: 1;
-    }
-
-    .mini-plate .mark-large {
-      position: absolute;
-      top: 38px;
-      left: 36px;
-      width: 108px;
-      height: 108px;
-      object-fit: contain;
-      filter: drop-shadow(0 16px 28px rgba(12, 35, 64, 0.54));
-    }
-
-    .mini-plate p {
-      max-width: 300px;
-      margin: 16px 0 0;
-      line-height: 1.65;
+    .about-photo figcaption {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 18px 22px;
+      border-top: 1px solid rgba(196, 206, 212, 0.14);
+      color: var(--silver);
+      background: rgba(6, 18, 35, 0.34);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2.2px;
+      line-height: 1.5;
+      text-transform: uppercase;
     }
 
     .about-copy {
@@ -517,9 +501,7 @@
     }
 
     .principles {
-      background:
-        linear-gradient(180deg, rgba(6, 18, 35, 0.24), rgba(12, 35, 64, 0.96)),
-        rgba(12, 35, 64, 0.98);
+      background: rgba(8, 24, 45, 0.42);
     }
 
     .principle-grid {
@@ -542,7 +524,7 @@
     .panel:hover {
       border-color: var(--edge-strong);
       transform: translateY(-4px);
-      box-shadow: 0 28px 62px rgba(5, 16, 31, 0.38);
+      box-shadow: 0 24px 48px rgba(5, 16, 31, 0.3);
     }
 
     .panel-number {
@@ -561,9 +543,7 @@
     }
 
     .future {
-      background:
-        linear-gradient(90deg, rgba(196, 206, 212, 0.045), transparent 30%),
-        var(--navy);
+      background: var(--navy);
     }
 
     .future-layout {
@@ -618,8 +598,7 @@
     }
 
     .contact {
-      background:
-        linear-gradient(180deg, rgba(6, 18, 35, 0.36), rgba(12, 35, 64, 0.98));
+      background: rgba(6, 18, 35, 0.26);
     }
 
     .contact-card {
@@ -628,9 +607,7 @@
       gap: 24px;
       padding: clamp(30px, 4vw, 48px);
       border: 1px solid var(--edge);
-      background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(196, 206, 212, 0.015)),
-        rgba(12, 35, 64, 0.72);
+      background: rgba(12, 35, 64, 0.72);
       box-shadow: var(--shadow);
     }
 
@@ -829,16 +806,12 @@
         grid-template-columns: 1fr;
       }
 
-      .mini-plate {
-        min-height: 360px;
-        padding: 28px;
+      .about-photo img {
+        aspect-ratio: 1 / 1.08;
       }
 
-      .mini-plate .mark-large {
-        top: 28px;
-        left: 28px;
-        width: 88px;
-        height: 88px;
+      .about-photo figcaption {
+        padding: 16px 18px;
       }
 
       .about-copy {
@@ -910,6 +883,12 @@
       .contact-card {
         padding-inline: 24px;
       }
+
+      .about-photo figcaption {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -980,17 +959,15 @@
 
     <section class="about" id="about">
       <div class="section-inner about-grid">
-        <aside class="mini-plate frame-corner reveal" aria-label="Helmgood identity plate">
-          <img class="mark-large" src="helmgood-mark.png" alt="">
-          <p class="eyebrow">Long-Term Ownership</p>
-          <h3>Structure before expansion.</h3>
-          <p>Clear ownership, sound records, and patient standards before new interests take shape.</p>
-        </aside>
+        <figure class="about-photo reveal">
+          <img src="about-family.jpeg" alt="The Helmgood family outdoors in Kentucky">
+          <figcaption><span>Family ownership</span><span>Kentucky-based</span></figcaption>
+        </figure>
         <div class="about-copy reveal">
           <p class="eyebrow">About</p>
           <h2>A private parent company built with a long view.</h2>
-          <p>Helmgood Holding LLC provides the ownership foundation for future operating interests. Its role is straightforward: maintain a clear structure, evaluate opportunities carefully, and support businesses with durable standards.</p>
-          <p>The company is grounded in disciplined operations and selective capital decisions. Expansion follows readiness, fit, and the ability to steward an interest responsibly over time.</p>
+          <p>Helmgood Holding LLC is a privately held ownership foundation for future operating interests. Its role is straightforward: maintain a clear structure, evaluate opportunities carefully, and support businesses with durable standards.</p>
+          <p>Grounded in Kentucky and family responsibility, the company approaches growth through disciplined operations and selective capital decisions. Expansion follows readiness, fit, and the ability to steward an interest well over time.</p>
           <div class="signature-line">
             <span>Private Holding Company</span>
             <span>Disciplined Operations</span>
