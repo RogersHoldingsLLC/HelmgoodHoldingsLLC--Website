@@ -1,6 +1,6 @@
-# Helmgood Holding LLC
+# Helmgood Holdings LLC
 
-Static website for Helmgood Holding LLC.
+Static website for Helmgood Holdings LLC.
 
 ## Preview
 

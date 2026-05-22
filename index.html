@@ -3,27 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Helmgood Holding LLC | Private Holding Company</title>
-  <meta name="description" content="Helmgood Holding LLC is a Kentucky-based private holding company established for disciplined ownership, operating interests, and enduring business value.">
+  <title>Helmgood Holdings LLC | Private Holding Company</title>
+  <meta name="description" content="Helmgood Holdings LLC is a Kentucky-based private holding company established for disciplined ownership, operating interests, and enduring business value.">
   <meta name="robots" content="index, follow">
-  <meta name="author" content="Helmgood Holding LLC">
+  <meta name="author" content="Helmgood Holdings LLC">
   <meta name="theme-color" content="#0C2340">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Helmgood Holding LLC">
+  <meta property="og:site_name" content="Helmgood Holdings LLC">
   <meta property="og:url" content="https://rogersholdingsllc.github.io/HelmgoodHoldingsLLC--Website/">
-  <meta property="og:title" content="Helmgood Holding LLC | Private Holding Company">
-  <meta property="og:description" content="A Kentucky-based holding company built for disciplined ownership and long-term business interests.">
-  <meta property="og:image" content="helmgood-hero.png">
-  <meta property="og:image:alt" content="Helmgood Holding LLC logo in navy, silver, and teal.">
+  <meta property="og:title" content="Helmgood Holdings LLC | Private Holding Company">
+  <meta property="og:description" content="Helmgood Holdings LLC is a Kentucky-based holding company built for disciplined ownership and long-term business interests.">
+  <meta property="og:image" content="husky-legacy-layer.jpg">
+  <meta property="og:image:alt" content="Helmgood Holdings LLC navy legacy brand atmosphere with a subtle husky silhouette.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Helmgood Holding LLC | Private Holding Company">
-  <meta name="twitter:description" content="Disciplined ownership and enduring business infrastructure for future operating interests.">
-  <meta name="twitter:image" content="helmgood-hero.png">
+  <meta name="twitter:title" content="Helmgood Holdings LLC | Private Holding Company">
+  <meta name="twitter:description" content="Helmgood Holdings LLC provides disciplined ownership and enduring business infrastructure for future operating interests.">
+  <meta name="twitter:image" content="husky-legacy-layer.jpg">
   <link rel="icon" href="helmgood-mark.png" type="image/png">
   <link rel="canonical" href="https://rogersholdingsllc.github.io/HelmgoodHoldingsLLC--Website/">
-  <link rel="preload" as="image" href="helmgood-hero.png">
   <link rel="preload" as="image" href="husky-legacy-layer.jpg">
   <link rel="preload" as="image" href="helmgood-mark.png">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Helmgood Holdings LLC",
+      "url": "https://rogersholdingsllc.github.io/HelmgoodHoldingsLLC--Website/",
+      "logo": "https://rogersholdingsllc.github.io/HelmgoodHoldingsLLC--Website/helmgood-mark.png",
+      "description": "Helmgood Holdings LLC is a Kentucky-based private holding company established for disciplined ownership, operating interests, and enduring business value."
+    }
+  </script>
   <script>document.documentElement.classList.add("js");</script>
   <style>
     :root {
@@ -164,7 +173,7 @@
       font-family: Georgia, "Times New Roman", serif;
       font-size: 20px;
       font-weight: 500;
-      letter-spacing: 3.6px;
+      letter-spacing: 2.2px;
     }
 
     .brand-name span {
@@ -257,15 +266,34 @@
       transition: transform 900ms var(--ease);
     }
 
-    .hero-frame img {
+    .hero-brand {
       position: relative;
       z-index: 1;
+      display: grid;
+      align-content: center;
+      justify-items: center;
+      gap: clamp(18px, 2.1vw, 34px);
       width: 100%;
       aspect-ratio: 3 / 2;
-      object-fit: cover;
-      object-position: center;
-      mix-blend-mode: screen;
-      opacity: 0.99;
+      padding: clamp(42px, 7vw, 110px);
+      text-align: center;
+    }
+
+    .hero-brand img {
+      width: min(420px, 43vw);
+      object-fit: contain;
+      filter: drop-shadow(0 28px 48px rgba(5, 16, 31, 0.42));
+    }
+
+    .hero-brand span {
+      color: var(--silver);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(28px, 4.3vw, 70px);
+      font-weight: 500;
+      letter-spacing: clamp(4px, 0.8vw, 12px);
+      line-height: 1.08;
+      text-transform: uppercase;
+      text-shadow: 0 16px 38px rgba(5, 16, 31, 0.38);
     }
 
     .hero-frame::after {
@@ -684,7 +712,7 @@
       min-width: auto;
     }
 
-    footer .brand-mark {
+    footer .brand-sigil {
       width: 48px;
       height: 48px;
     }
@@ -743,7 +771,7 @@
 
       .brand-name strong {
         font-size: 17px;
-        letter-spacing: 3px;
+        letter-spacing: 2.4px;
       }
 
       .brand-name span {
@@ -773,8 +801,14 @@
         padding-inline: 20px;
       }
 
-      .hero-frame img {
+      .hero-brand {
         aspect-ratio: 1.16 / 1;
+        gap: 16px;
+        padding-inline: 24px;
+      }
+
+      .hero-brand img {
+        width: min(310px, 56vw);
       }
 
       .hero-frame::after {
@@ -899,9 +933,13 @@
         font-size: 16px;
       }
 
-      .hero-frame img {
+      .hero-brand {
         aspect-ratio: 1 / 1;
-        object-position: center;
+      }
+
+      .hero-brand span {
+        font-size: clamp(24px, 7vw, 36px);
+        letter-spacing: 4px;
       }
 
       .hero-actions,
@@ -948,9 +986,9 @@
 </head>
 <body>
   <header class="site-nav">
-    <a class="brand" href="#" aria-label="Helmgood Holding LLC home">
-      <span class="brand-sigil"><img class="brand-mark" src="helmgood-mark.png" alt="Helmgood compass H mark"></span>
-      <span class="brand-name"><strong>Helmgood</strong><span>Holding LLC</span></span>
+    <a class="brand" href="#" aria-label="Helmgood Holdings LLC home">
+      <span class="brand-sigil"><img class="brand-mark" src="helmgood-mark.png" alt="Helmgood Holdings LLC compass H mark"></span>
+      <span class="brand-name"><strong>Helmgood Holdings LLC</strong><span>Private Holding Company</span></span>
     </a>
     <nav class="nav-links" aria-label="Primary navigation">
       <a href="#about">About</a>
@@ -964,13 +1002,16 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-media">
         <figure class="hero-frame frame-corner">
-          <img src="helmgood-hero.png" alt="Helmgood Holding LLC H compass logo lockup">
+          <div class="hero-brand" aria-label="Helmgood Holdings LLC logo lockup">
+            <img src="helmgood-mark.png" alt="Helmgood Holdings LLC compass H mark">
+            <span>Helmgood Holdings LLC</span>
+          </div>
         </figure>
       </div>
       <div class="hero-content reveal">
-        <p class="eyebrow">Helmgood Holding LLC</p>
+        <p class="eyebrow">Helmgood Holdings LLC</p>
         <h1 id="hero-title">Holding structure for enduring business value.</h1>
-        <p class="hero-copy">Helmgood Holding LLC is a privately held company built to own, support, and grow future business interests with discipline, patience, and practical operating judgment.</p>
+        <p class="hero-copy">Helmgood Holdings LLC is a privately held company built to own, support, and grow future business interests with discipline, patience, and practical operating judgment.</p>
         <div class="hero-actions">
           <a class="button primary" href="#contact">Contact</a>
           <a class="button" href="#about">Company Overview</a>
@@ -984,7 +1025,7 @@
       </div>
     </section>
 
-    <aside class="institutional-line" aria-label="Helmgood focus">
+    <aside class="institutional-line" aria-label="Helmgood Holdings LLC focus">
       <ul>
         <li><span>Ownership</span><strong>Long horizon</strong></li>
         <li><span>Operations</span><strong>Disciplined oversight</strong></li>
@@ -995,13 +1036,13 @@
     <section class="about" id="about">
       <div class="section-inner about-grid">
         <figure class="about-photo reveal">
-          <img src="about-family.jpeg" alt="The Helmgood family outdoors in Kentucky">
+          <img src="about-family.jpeg" alt="The Helmgood Holdings LLC family outdoors in Kentucky">
           <figcaption><span>Family ownership</span><span>Kentucky-based</span></figcaption>
         </figure>
         <div class="about-copy reveal">
           <p class="eyebrow">About</p>
           <h2>A private parent company built with a long view.</h2>
-          <p>Helmgood Holding LLC is a privately held ownership foundation for future operating interests. Its role is straightforward: maintain a clear structure, evaluate opportunities carefully, and support businesses with durable standards.</p>
+          <p>Helmgood Holdings LLC is a privately held ownership foundation for future operating interests. Its role is straightforward: maintain a clear structure, evaluate opportunities carefully, and support businesses with durable standards.</p>
           <p>Grounded in Kentucky, family responsibility, and the values of Jesus Christ, the company approaches growth through disciplined operations and selective capital decisions. Expansion follows readiness, fit, and the ability to steward an interest well over time.</p>
           <div class="signature-line">
             <span>Christ-Centered Values</span>
@@ -1018,7 +1059,7 @@
         <header class="section-heading reveal">
           <p class="eyebrow">Operating Principles</p>
           <h2>Ownership earns trust through standards.</h2>
-          <p>Helmgood is organized to hold future interests with faithful stewardship, attention to records, disciplined execution, and respect for reputation.</p>
+          <p>Helmgood Holdings LLC is organized to hold future interests with faithful stewardship, attention to records, disciplined execution, and respect for reputation.</p>
         </header>
         <div class="principle-grid">
           <article class="panel reveal">
@@ -1045,7 +1086,7 @@
         <div class="future-copy reveal">
           <p class="eyebrow">Future Direction</p>
           <h2>Prepared for operating interests that fit.</h2>
-          <p>Helmgood is intentionally concise at this stage. As business interests are added, they can be presented with the context, accountability, and clarity they deserve.</p>
+          <p>Helmgood Holdings LLC is intentionally concise at this stage. As business interests are added, they can be presented with the context, accountability, and clarity they deserve.</p>
         </div>
         <div class="future-list">
           <article class="future-item reveal">
@@ -1069,10 +1110,10 @@
         <header class="section-heading reveal">
           <p class="eyebrow">Contact</p>
           <h2>Direct inquiries.</h2>
-          <p>For introductions, ownership conversations, or aligned opportunities, contact Helmgood Holding LLC directly.</p>
+          <p>For introductions, ownership conversations, or aligned opportunities, contact Helmgood Holdings LLC directly.</p>
         </header>
         <aside class="contact-card frame-corner reveal">
-          <h3>Helmgood Holding LLC</h3>
+          <h3>Helmgood Holdings LLC</h3>
           <p>Kentucky-based. Privately held. Built to support future business interests with disciplined oversight.</p>
           <div class="contact-meta">
             <a href="mailto:contact@helmgoodholdings.com">contact@helmgoodholdings.com</a>
@@ -1085,11 +1126,11 @@
   </main>
 
   <footer>
-    <a class="brand" href="#" aria-label="Helmgood Holding LLC home">
+    <a class="brand" href="#" aria-label="Helmgood Holdings LLC home">
       <span class="brand-sigil"><img class="brand-mark" src="helmgood-mark.png" alt=""></span>
-      <span class="brand-name"><strong>Helmgood</strong><span>Holding LLC</span></span>
+      <span class="brand-name"><strong>Helmgood Holdings LLC</strong><span>Private Holding Company</span></span>
     </a>
-    <span>Kentucky-based private holding company. Built for enduring value.</span>
+    <span>&copy; 2026 Helmgood Holdings LLC. Kentucky-based private holding company. Built for enduring value.</span>
   </footer>
   <script>
     const header = document.querySelector(".site-nav");
