@@ -22,6 +22,7 @@
   <link rel="icon" href="helmgood-mark.png" type="image/png">
   <link rel="canonical" href="https://rogersholdingsllc.github.io/HelmgoodHoldingsLLC--Website/">
   <link rel="preload" as="image" href="helmgood-hero.png">
+  <link rel="preload" as="image" href="husky-legacy-layer.jpg">
   <link rel="preload" as="image" href="helmgood-mark.png">
   <script>document.documentElement.classList.add("js");</script>
   <style>
@@ -124,11 +125,31 @@
       text-decoration: none;
     }
 
-    .brand-mark {
+    .brand-sigil {
+      position: relative;
       width: 56px;
       height: 56px;
-      object-fit: contain;
       flex: 0 0 auto;
+      isolation: isolate;
+    }
+
+    .brand-sigil::before {
+      position: absolute;
+      inset: 4px;
+      z-index: -1;
+      opacity: 0.17;
+      border: 1px solid rgba(0, 92, 92, 0.32);
+      background:
+        linear-gradient(rgba(12, 35, 64, 0.28), rgba(12, 35, 64, 0.82)),
+        url("husky-legacy-layer.jpg") 67% 42% / cover;
+      content: "";
+      filter: saturate(0.72) contrast(0.9);
+    }
+
+    .brand-mark {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
       filter: drop-shadow(0 12px 20px rgba(5, 16, 31, 0.42));
     }
 
@@ -226,25 +247,34 @@
       margin: 0 auto;
       overflow: hidden;
       border: 1px solid rgba(196, 206, 212, 0.2);
-      background: var(--navy-deep);
+      background:
+        linear-gradient(90deg, rgba(6, 18, 35, 0.8), rgba(12, 35, 64, 0.48)),
+        linear-gradient(180deg, rgba(12, 35, 64, 0.34), rgba(6, 18, 35, 0.44)),
+        url("husky-legacy-layer.jpg") 72% center / cover,
+        var(--navy-deep);
       box-shadow: var(--shadow);
       transform: translate3d(0, var(--hero-shift, 0px), 0);
       transition: transform 900ms var(--ease);
     }
 
     .hero-frame img {
+      position: relative;
+      z-index: 1;
       width: 100%;
       aspect-ratio: 3 / 2;
       object-fit: cover;
       object-position: center;
+      mix-blend-mode: screen;
+      opacity: 0.99;
     }
 
     .hero-frame::after {
+      z-index: 2;
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(90deg, rgba(12, 35, 64, 0.15), transparent 40%, rgba(12, 35, 64, 0.1)),
-        linear-gradient(180deg, rgba(12, 35, 64, 0.02), rgba(12, 35, 64, 0.16));
+        linear-gradient(90deg, rgba(6, 18, 35, 0.38), transparent 44%, rgba(12, 35, 64, 0.22)),
+        linear-gradient(180deg, rgba(12, 35, 64, 0.08), rgba(6, 18, 35, 0.3));
       content: "";
     }
 
@@ -702,6 +732,11 @@
       }
 
       .brand-mark {
+        width: 100%;
+        height: 100%;
+      }
+
+      .brand-sigil {
         width: 48px;
         height: 48px;
       }
@@ -914,7 +949,7 @@
 <body>
   <header class="site-nav">
     <a class="brand" href="#" aria-label="Helmgood Holding LLC home">
-      <img class="brand-mark" src="helmgood-mark.png" alt="Helmgood compass H mark">
+      <span class="brand-sigil"><img class="brand-mark" src="helmgood-mark.png" alt="Helmgood compass H mark"></span>
       <span class="brand-name"><strong>Helmgood</strong><span>Holding LLC</span></span>
     </a>
     <nav class="nav-links" aria-label="Primary navigation">
@@ -967,8 +1002,9 @@
           <p class="eyebrow">About</p>
           <h2>A private parent company built with a long view.</h2>
           <p>Helmgood Holding LLC is a privately held ownership foundation for future operating interests. Its role is straightforward: maintain a clear structure, evaluate opportunities carefully, and support businesses with durable standards.</p>
-          <p>Grounded in Kentucky and family responsibility, the company approaches growth through disciplined operations and selective capital decisions. Expansion follows readiness, fit, and the ability to steward an interest well over time.</p>
+          <p>Grounded in Kentucky, family responsibility, and the values of Jesus Christ, the company approaches growth through disciplined operations and selective capital decisions. Expansion follows readiness, fit, and the ability to steward an interest well over time.</p>
           <div class="signature-line">
+            <span>Christ-Centered Values</span>
             <span>Private Holding Company</span>
             <span>Disciplined Operations</span>
             <span>Strategic Capital</span>
@@ -982,7 +1018,7 @@
         <header class="section-heading reveal">
           <p class="eyebrow">Operating Principles</p>
           <h2>Ownership earns trust through standards.</h2>
-          <p>Helmgood is organized to hold future interests with attention to records, execution, and reputation.</p>
+          <p>Helmgood is organized to hold future interests with faithful stewardship, attention to records, disciplined execution, and respect for reputation.</p>
         </header>
         <div class="principle-grid">
           <article class="panel reveal">
@@ -1050,7 +1086,7 @@
 
   <footer>
     <a class="brand" href="#" aria-label="Helmgood Holding LLC home">
-      <img class="brand-mark" src="helmgood-mark.png" alt="">
+      <span class="brand-sigil"><img class="brand-mark" src="helmgood-mark.png" alt=""></span>
       <span class="brand-name"><strong>Helmgood</strong><span>Holding LLC</span></span>
     </a>
     <span>Kentucky-based private holding company. Built for enduring value.</span>
