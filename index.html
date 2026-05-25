@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Helmgood Holdings LLC | Private Holding Company</title>
-  <meta name="description" content="Helmgood Holdings LLC is a Kentucky-based private holding company established for disciplined ownership, operating interests, and enduring business value.">
+  <meta name="description" content="Helmgood Holdings LLC is a privately held, family-owned holding company established for future operating interests.">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Helmgood Holdings LLC">
   <meta name="theme-color" content="#0C2340">
@@ -12,12 +12,12 @@
   <meta property="og:site_name" content="Helmgood Holdings LLC">
   <meta property="og:url" content="https://rogersholdingsllc.github.io/HelmgoodHoldingsLLC--Website/">
   <meta property="og:title" content="Helmgood Holdings LLC | Private Holding Company">
-  <meta property="og:description" content="Helmgood Holdings LLC is a Kentucky-based holding company built for disciplined ownership and long-term business interests.">
+  <meta property="og:description" content="A privately held, family-owned holding company established for future operating interests.">
   <meta property="og:image" content="hero-red-husky-lockup.jpg">
   <meta property="og:image:alt" content="Helmgood Holdings LLC monogram and copy with a red Siberian husky on the right.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Helmgood Holdings LLC | Private Holding Company">
-  <meta name="twitter:description" content="Helmgood Holdings LLC provides disciplined ownership and enduring business infrastructure for future operating interests.">
+  <meta name="twitter:description" content="A privately held, family-owned holding company established for future operating interests.">
   <meta name="twitter:image" content="hero-red-husky-lockup.jpg">
   <link rel="icon" href="helmgood-mark.png" type="image/png">
   <link rel="canonical" href="https://rogersholdingsllc.github.io/HelmgoodHoldingsLLC--Website/">
@@ -30,7 +30,7 @@
       "name": "Helmgood Holdings LLC",
       "url": "https://rogersholdingsllc.github.io/HelmgoodHoldingsLLC--Website/",
       "logo": "https://rogersholdingsllc.github.io/HelmgoodHoldingsLLC--Website/helmgood-mark.png",
-      "description": "Helmgood Holdings LLC is a Kentucky-based private holding company established for disciplined ownership, operating interests, and enduring business value."
+      "description": "Helmgood Holdings LLC is a privately held, family-owned holding company established for future operating interests."
     }
   </script>
   <script>document.documentElement.classList.add("js");</script>
@@ -390,52 +390,9 @@
       text-transform: uppercase;
     }
 
-    .institutional-line {
-      position: relative;
-      border-bottom: 1px solid rgba(196, 206, 212, 0.14);
-      background: rgba(6, 18, 35, 0.28);
-    }
-
-    .institutional-line ul {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      width: min(1160px, 88vw);
-      margin: 0 auto;
-      padding: 0;
-      list-style: none;
-    }
-
-    .institutional-line li {
-      min-height: 96px;
-      display: grid;
-      align-content: center;
-      gap: 8px;
-      padding: 24px clamp(18px, 3vw, 40px);
-      border-left: 1px solid rgba(196, 206, 212, 0.14);
-    }
-
-    .institutional-line li:last-child {
-      border-right: 1px solid rgba(196, 206, 212, 0.14);
-    }
-
-    .institutional-line strong {
-      color: var(--white);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(20px, 2vw, 28px);
-      font-weight: 500;
-    }
-
-    .institutional-line span {
-      color: var(--silver);
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 2.6px;
-      text-transform: uppercase;
-    }
-
     section {
       position: relative;
-      padding: clamp(82px, 9vw, 124px) 6vw;
+      padding: clamp(78px, 8vw, 112px) 6vw;
       scroll-margin-top: 116px;
     }
 
@@ -476,6 +433,18 @@
       box-shadow: 0 22px 52px rgba(5, 16, 31, 0.24);
     }
 
+    .about-photo::before {
+      position: absolute;
+      z-index: 1;
+      inset: 0 0 56px;
+      background:
+        linear-gradient(180deg, rgba(12, 35, 64, 0.08), rgba(12, 35, 64, 0.22)),
+        rgba(0, 92, 92, 0.08);
+      content: "";
+      pointer-events: none;
+      mix-blend-mode: color;
+    }
+
     .about-photo img {
       width: 100%;
       aspect-ratio: 0.86;
@@ -483,9 +452,12 @@
       object-position: 61% 50%;
       transform: scale(1.18);
       transform-origin: 61% 52%;
+      filter: saturate(0.9) contrast(0.98) brightness(0.92);
     }
 
     .about-photo figcaption {
+      position: relative;
+      z-index: 2;
       display: flex;
       justify-content: space-between;
       gap: 18px;
@@ -511,8 +483,7 @@
     }
 
     .section-heading p,
-    .about-copy p,
-    .future-copy p {
+    .about-copy p {
       margin: 20px 0 0;
       font-size: 18px;
       line-height: 1.8;
@@ -532,101 +503,60 @@
       font-weight: 700;
     }
 
-    .principles {
-      background: rgba(8, 24, 45, 0.42);
+    .focus,
+    .owner {
+      background: rgba(8, 24, 45, 0.3);
     }
 
-    .principle-grid {
+    .owner {
+      background: rgba(12, 35, 64, 0.92);
+    }
+
+    .editorial-layout {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .panel {
-      position: relative;
-      min-height: 268px;
-      overflow: hidden;
-      padding: 34px;
-      border: 1px solid var(--edge);
-      background: rgba(255, 255, 255, 0.035);
-      box-shadow: var(--shadow);
-      transition: transform 240ms var(--ease), border-color 240ms var(--ease), box-shadow 240ms var(--ease);
-    }
-
-    .panel:hover {
-      border-color: var(--edge-strong);
-      transform: translateY(-4px);
-      box-shadow: 0 24px 48px rgba(5, 16, 31, 0.3);
-    }
-
-    .panel-number {
-      display: block;
-      margin-bottom: 70px;
-      color: var(--teal);
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .panel p {
-      margin: 18px 0 0;
-      line-height: 1.72;
-    }
-
-    .future {
-      background: var(--navy);
-    }
-
-    .future-layout {
-      display: grid;
-      grid-template-columns: minmax(320px, 0.9fr) minmax(420px, 1.1fr);
-      align-items: center;
-      gap: clamp(42px, 6vw, 76px);
-    }
-
-    .future-list {
-      display: grid;
-      gap: 14px;
-    }
-
-    .future-item {
-      display: grid;
-      grid-template-columns: 84px 1fr;
-      gap: 22px;
+      grid-template-columns: minmax(280px, 0.82fr) minmax(360px, 1fr);
       align-items: start;
-      padding: 25px;
-      border: 1px solid var(--edge);
-      background: rgba(255, 255, 255, 0.028);
-      box-shadow: 0 18px 38px rgba(5, 16, 31, 0.18);
-      transition: border-color 240ms var(--ease), background 240ms var(--ease), transform 240ms var(--ease);
+      gap: clamp(38px, 7vw, 92px);
     }
 
-    .future-item:hover {
-      border-color: var(--edge-strong);
-      background: rgba(255, 255, 255, 0.045);
-      transform: translateY(-3px);
+    .editorial-layout .section-heading {
+      margin-bottom: 0;
     }
 
-    .future-item span {
+    .focus-list {
       display: grid;
-      align-items: center;
-      min-height: 34px;
+      border-top: 1px solid rgba(196, 206, 212, 0.18);
+    }
+
+    .focus-list span {
+      display: block;
+      padding: 22px 0;
+      border-bottom: 1px solid rgba(196, 206, 212, 0.14);
+      color: var(--white);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(24px, 3vw, 42px);
+      line-height: 1.08;
+    }
+
+    .owner-copy {
+      max-width: 590px;
+      padding-left: clamp(20px, 3vw, 34px);
+      border-left: 1px solid rgba(0, 92, 92, 0.7);
+    }
+
+    .owner-copy .role {
+      margin: 0 0 22px;
       color: var(--teal);
-      border-right: 1px solid rgba(0, 92, 92, 0.5);
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 2.2px;
+      letter-spacing: 2.8px;
       text-transform: uppercase;
     }
 
-    .future-item h3 {
-      font-size: clamp(22px, 2vw, 29px);
-    }
-
-    .future-item p {
-      margin: 12px 0 0;
-      line-height: 1.7;
+    .owner-copy p:last-child {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.8;
     }
 
     .contact {
@@ -711,16 +641,6 @@
       transform: translateY(0);
     }
 
-    .principle-grid .reveal:nth-child(2),
-    .future-list .reveal:nth-child(2) {
-      transition-delay: 80ms;
-    }
-
-    .principle-grid .reveal:nth-child(3),
-    .future-list .reveal:nth-child(3) {
-      transition-delay: 150ms;
-    }
-
     @media (max-width: 860px) {
       .site-nav {
         gap: 14px;
@@ -801,8 +721,7 @@
 
       .hero-copy,
       .section-heading p,
-      .about-copy p,
-      .future-copy p {
+      .about-copy p {
         font-size: 16px;
         line-height: 1.72;
       }
@@ -817,25 +736,9 @@
         text-align: center;
       }
 
-      .institutional-line ul {
-        grid-template-columns: 1fr;
-        width: calc(100% - 40px);
-      }
-
-      .institutional-line li,
-      .institutional-line li:last-child {
-        min-height: 0;
-        border-right: 1px solid rgba(196, 206, 212, 0.14);
-        border-bottom: 1px solid rgba(196, 206, 212, 0.14);
-      }
-
-      .institutional-line li:last-child {
-        border-bottom: 0;
-      }
-
       .about-grid,
-      .future-layout,
-      .contact-grid {
+      .contact-grid,
+      .editorial-layout {
         grid-template-columns: 1fr;
       }
 
@@ -851,24 +754,8 @@
         padding-left: 18px;
       }
 
-      .principle-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .panel-number {
-        margin-bottom: 42px;
-      }
-
-      .future-item {
-        grid-template-columns: 1fr;
-        gap: 11px;
-      }
-
-      .future-item span {
-        min-height: 0;
-        padding-bottom: 12px;
-        border-right: 0;
-        border-bottom: 1px solid rgba(0, 92, 92, 0.5);
+      .owner-copy {
+        padding-left: 18px;
       }
 
       footer {
@@ -906,9 +793,8 @@
         flex-basis: 100%;
       }
 
-      .panel,
-      .future-item,
-      .contact-card {
+      .contact-card,
+      .owner-copy {
         padding-inline: 24px;
       }
 
@@ -947,8 +833,8 @@
     </a>
     <nav class="nav-links" aria-label="Primary navigation">
       <a href="#about">About</a>
-      <a href="#principles">Principles</a>
-      <a href="#future">Future</a>
+      <a href="#focus">Focus</a>
+      <a href="#owner">Owner</a>
       <a class="contact-link" href="#contact">Contact</a>
     </nav>
   </header>
@@ -962,28 +848,19 @@
       </div>
       <div class="hero-content reveal">
         <p class="eyebrow">Helmgood Holdings LLC</p>
-        <h1 id="hero-title">Holding structure for enduring business value.</h1>
-        <p class="hero-copy">Helmgood Holdings LLC is a privately held company built to own, support, and grow future business interests with discipline, patience, and practical operating judgment.</p>
+        <h1 id="hero-title">Long-term ownership for enduring businesses.</h1>
+        <p class="hero-copy">A privately held company organized for future operating interests, practical oversight, and quiet capital discipline.</p>
         <div class="hero-actions">
           <a class="button primary" href="#contact">Contact</a>
-          <a class="button" href="#about">Company Overview</a>
+          <a class="button" href="#about">Overview</a>
         </div>
         <ul class="credentials" aria-label="Company attributes">
           <li>Privately Held</li>
-          <li>Long-Term Ownership</li>
-          <li>Kentucky-Based</li>
-          <li>Built for Enduring Value</li>
+          <li>Family Ownership</li>
+          <li>Christ-Centered Values</li>
         </ul>
       </div>
     </section>
-
-    <aside class="institutional-line" aria-label="Helmgood Holdings LLC focus">
-      <ul>
-        <li><span>Ownership</span><strong>Long horizon</strong></li>
-        <li><span>Operations</span><strong>Disciplined oversight</strong></li>
-        <li><span>Capital</span><strong>Strategic allocation</strong></li>
-      </ul>
-    </aside>
 
     <section class="about" id="about">
       <div class="section-inner about-grid">
@@ -993,66 +870,41 @@
         </figure>
         <div class="about-copy reveal">
           <p class="eyebrow">About</p>
-          <h2>A private parent company built with a long view.</h2>
-          <p>Helmgood Holdings LLC is a privately held ownership foundation for future operating interests. Its role is straightforward: maintain a clear structure, evaluate opportunities carefully, and support businesses with durable standards.</p>
-          <p>Grounded in Kentucky, family responsibility, and the values of Jesus Christ, the company approaches growth through disciplined operations and selective capital decisions. Expansion follows readiness, fit, and the ability to steward an interest well over time.</p>
+          <h2>A Kentucky-based private holding company.</h2>
+          <p>Helmgood Holdings LLC is a family-owned parent company for future operating interests.</p>
+          <p>Built on Christ-centered values, the company favors careful administration, practical judgment, and disciplined operations.</p>
           <div class="signature-line">
-            <span>Christ-Centered Values</span>
-            <span>Private Holding Company</span>
-            <span>Disciplined Operations</span>
-            <span>Strategic Capital</span>
+            <span>Privately Held</span>
+            <span>Family-Owned</span>
+            <span>Future Operating Interests</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="principles" id="principles">
-      <div class="section-inner">
+    <section class="focus" id="focus">
+      <div class="section-inner editorial-layout">
         <header class="section-heading reveal">
-          <p class="eyebrow">Operating Principles</p>
-          <h2>Ownership earns trust through standards.</h2>
-          <p>Helmgood Holdings LLC is organized to hold future interests with faithful stewardship, attention to records, disciplined execution, and respect for reputation.</p>
+          <p class="eyebrow">Focus Areas</p>
+          <h2>Selective by design.</h2>
         </header>
-        <div class="principle-grid">
-          <article class="panel reveal">
-            <span class="panel-number">01</span>
-            <h3>Selective ownership.</h3>
-            <p>Interests should be understandable, aligned with the holding structure, and worthy of sustained responsibility.</p>
-          </article>
-          <article class="panel reveal">
-            <span class="panel-number">02</span>
-            <h3>Disciplined operations.</h3>
-            <p>Sound records, capable relationships, measured decisions, and execution matter before scale.</p>
-          </article>
-          <article class="panel reveal">
-            <span class="panel-number">03</span>
-            <h3>Enduring value.</h3>
-            <p>Capital and attention are directed toward durable outcomes, not short-term presentation.</p>
-          </article>
+        <div class="focus-list reveal" aria-label="Helmgood Holdings LLC focus areas">
+          <span>Business Services</span>
+          <span>Real Estate</span>
+          <span>Digital Infrastructure</span>
         </div>
       </div>
     </section>
 
-    <section class="future" id="future">
-      <div class="section-inner future-layout">
-        <div class="future-copy reveal">
-          <p class="eyebrow">Future Direction</p>
-          <h2>Prepared for operating interests that fit.</h2>
-          <p>Helmgood Holdings LLC is intentionally concise at this stage. As business interests are added, they can be presented with the context, accountability, and clarity they deserve.</p>
-        </div>
-        <div class="future-list">
-          <article class="future-item reveal">
-            <span>Foundation</span>
-            <div><h3>Holding infrastructure</h3><p>Ownership records, financial readiness, governance, and durable administration.</p></div>
-          </article>
-          <article class="future-item reveal">
-            <span>Ventures</span>
-            <div><h3>Selective opportunities</h3><p>Future businesses and assets considered through operating fit and long-term responsibility.</p></div>
-          </article>
-          <article class="future-item reveal">
-            <span>Stewardship</span>
-            <div><h3>Long-term management</h3><p>Patient oversight designed to protect reputation, continuity, and enterprise value.</p></div>
-          </article>
+    <section class="owner" id="owner">
+      <div class="section-inner editorial-layout">
+        <header class="section-heading reveal">
+          <p class="eyebrow">Founder / Owner</p>
+          <h2>Louis Helmburg III</h2>
+        </header>
+        <div class="owner-copy reveal">
+          <p class="role">Founder &amp; Owner</p>
+          <p>Louis Helmburg III leads Helmgood Holdings LLC with a focus on family ownership, sound judgment, and careful preparation for future business interests.</p>
         </div>
       </div>
     </section>
@@ -1062,16 +914,16 @@
         <header class="section-heading reveal">
           <p class="eyebrow">Contact</p>
           <h2>Direct inquiries.</h2>
-          <p>For introductions, ownership conversations, or aligned opportunities, contact Helmgood Holdings LLC directly.</p>
+          <p>For introductions or aligned opportunities, contact Helmgood Holdings LLC directly.</p>
         </header>
         <aside class="contact-card frame-corner reveal">
           <h3>Helmgood Holdings LLC</h3>
-          <p>Kentucky-based. Privately held. Built to support future business interests with disciplined oversight.</p>
+          <p>Privately held. Family-owned. Built around Christ-centered values.</p>
           <div class="contact-meta">
-            <a href="mailto:contact@helmgoodholdings.com">contact@helmgoodholdings.com</a>
-            <span>Long-term ownership and strategic capital</span>
+            <a href="mailto:louis@helmgoodholdingsllc.com">louis@helmgoodholdingsllc.com</a>
+            <span>Private holding company / Future operating interests</span>
           </div>
-          <a class="button primary" href="mailto:contact@helmgoodholdings.com">Send Inquiry</a>
+          <a class="button primary" href="mailto:louis@helmgoodholdingsllc.com">Send Inquiry</a>
         </aside>
       </div>
     </section>
@@ -1082,7 +934,7 @@
       <span class="brand-sigil"><img class="brand-mark" src="helmgood-mark.png" alt=""></span>
       <span class="brand-name"><strong>Helmgood Holdings LLC</strong><span>Private Holding Company</span></span>
     </a>
-    <span>&copy; 2026 Helmgood Holdings LLC. Kentucky-based private holding company. Built for enduring value.</span>
+    <span>&copy; 2026 Helmgood Holdings LLC. Private holding company.</span>
   </footer>
   <script>
     const header = document.querySelector(".site-nav");
