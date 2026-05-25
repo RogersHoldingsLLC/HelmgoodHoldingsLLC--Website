@@ -13,15 +13,15 @@
   <meta property="og:url" content="https://rogersholdingsllc.github.io/HelmgoodHoldingsLLC--Website/">
   <meta property="og:title" content="Helmgood Holdings LLC | Private Holding Company">
   <meta property="og:description" content="Helmgood Holdings LLC is a Kentucky-based holding company built for disciplined ownership and long-term business interests.">
-  <meta property="og:image" content="husky-legacy-layer.jpg">
-  <meta property="og:image:alt" content="Helmgood Holdings LLC navy legacy brand atmosphere with a subtle husky silhouette.">
+  <meta property="og:image" content="hero-red-husky-lockup.jpg">
+  <meta property="og:image:alt" content="Helmgood Holdings LLC monogram and copy with a red Siberian husky on the right.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Helmgood Holdings LLC | Private Holding Company">
   <meta name="twitter:description" content="Helmgood Holdings LLC provides disciplined ownership and enduring business infrastructure for future operating interests.">
-  <meta name="twitter:image" content="husky-legacy-layer.jpg">
+  <meta name="twitter:image" content="hero-red-husky-lockup.jpg">
   <link rel="icon" href="helmgood-mark.png" type="image/png">
   <link rel="canonical" href="https://rogersholdingsllc.github.io/HelmgoodHoldingsLLC--Website/">
-  <link rel="preload" as="image" href="husky-legacy-layer.jpg">
+  <link rel="preload" as="image" href="hero-red-husky-lockup.jpg">
   <link rel="preload" as="image" href="helmgood-mark.png">
   <script type="application/ld+json">
     {
@@ -146,13 +146,13 @@
       position: absolute;
       inset: 4px;
       z-index: -1;
-      opacity: 0.17;
+      opacity: 0.24;
       border: 1px solid rgba(0, 92, 92, 0.32);
       background:
-        linear-gradient(rgba(12, 35, 64, 0.28), rgba(12, 35, 64, 0.82)),
-        url("husky-legacy-layer.jpg") 67% 42% / cover;
+        linear-gradient(rgba(12, 35, 64, 0.18), rgba(12, 35, 64, 0.72)),
+        url("husky-red-legacy-layer.jpg") 67% 42% / cover;
       content: "";
-      filter: saturate(0.72) contrast(0.9);
+      filter: saturate(1.05) contrast(0.94);
     }
 
     .brand-mark {
@@ -256,54 +256,28 @@
       margin: 0 auto;
       overflow: hidden;
       border: 1px solid rgba(196, 206, 212, 0.2);
-      background:
-        linear-gradient(90deg, rgba(6, 18, 35, 0.8), rgba(12, 35, 64, 0.48)),
-        linear-gradient(180deg, rgba(12, 35, 64, 0.34), rgba(6, 18, 35, 0.44)),
-        url("husky-legacy-layer.jpg") 72% center / cover,
-        var(--navy-deep);
+      background: var(--navy-deep);
       box-shadow: var(--shadow);
       transform: translate3d(0, var(--hero-shift, 0px), 0);
       transition: transform 900ms var(--ease);
     }
 
-    .hero-brand {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      align-content: center;
-      justify-items: center;
-      gap: clamp(18px, 2.1vw, 34px);
+    .hero-lockup-image {
+      display: block;
       width: 100%;
-      aspect-ratio: 3 / 2;
-      padding: clamp(42px, 7vw, 110px);
-      text-align: center;
-    }
-
-    .hero-brand img {
-      width: min(420px, 43vw);
+      height: auto;
       object-fit: contain;
-      filter: drop-shadow(0 28px 48px rgba(5, 16, 31, 0.42));
-    }
-
-    .hero-brand span {
-      color: var(--silver);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(28px, 4.3vw, 70px);
-      font-weight: 500;
-      letter-spacing: clamp(4px, 0.8vw, 12px);
-      line-height: 1.08;
-      text-transform: uppercase;
-      text-shadow: 0 16px 38px rgba(5, 16, 31, 0.38);
+      object-position: center;
     }
 
     .hero-frame::after {
-      z-index: 2;
+      z-index: 1;
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(90deg, rgba(6, 18, 35, 0.38), transparent 44%, rgba(12, 35, 64, 0.22)),
-        linear-gradient(180deg, rgba(12, 35, 64, 0.08), rgba(6, 18, 35, 0.3));
+        linear-gradient(180deg, rgba(12, 35, 64, 0.01), rgba(6, 18, 35, 0.08));
       content: "";
+      pointer-events: none;
     }
 
     .hero-content {
@@ -801,16 +775,6 @@
         padding-inline: 20px;
       }
 
-      .hero-brand {
-        aspect-ratio: 1.16 / 1;
-        gap: 16px;
-        padding-inline: 24px;
-      }
-
-      .hero-brand img {
-        width: min(310px, 56vw);
-      }
-
       .hero-frame::after {
         background:
           linear-gradient(180deg, rgba(12, 35, 64, 0.06), rgba(12, 35, 64, 0.34)),
@@ -933,15 +897,6 @@
         font-size: 16px;
       }
 
-      .hero-brand {
-        aspect-ratio: 1 / 1;
-      }
-
-      .hero-brand span {
-        font-size: clamp(24px, 7vw, 36px);
-        letter-spacing: 4px;
-      }
-
       .hero-actions,
       .button {
         width: 100%;
@@ -1002,10 +957,7 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-media">
         <figure class="hero-frame frame-corner">
-          <div class="hero-brand" aria-label="Helmgood Holdings LLC logo lockup">
-            <img src="helmgood-mark.png" alt="Helmgood Holdings LLC compass H mark">
-            <span>Helmgood Holdings LLC</span>
-          </div>
+          <img class="hero-lockup-image" src="hero-red-husky-lockup.jpg" alt="Helmgood Holdings LLC monogram and copy with a red Siberian husky on the right">
         </figure>
       </div>
       <div class="hero-content reveal">
